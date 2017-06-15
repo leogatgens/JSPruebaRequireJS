@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script src="public/js/lib/require.js"></script>
 <script>
-function myFunction() {
-    document.getElementById("demo").innerHTML = "Paragraph changed.";
-}
-</script>
+           require(['public/js/config.js'], function(){
+               require(['views/formulario/agregar']                
+             );
+           });
+         </script>
+
+
 </head>
 
 <body>
 
 <h1>A Web Page</h1>
 <p id="demo">A Paragraph</p>
-<button type="button" onclick="myFunction()">Try it</button>
+<button id="botonPrueba" type="button">Try it</button>
 
 </body>
 </html>
